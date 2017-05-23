@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ElementRef ,ViewChild} from '@angular/core';
 import { WebApiObservableService } from '../../services/web-api-observable.service';
 import { EmitterService, MessageCustom } from '../../services/emitter.service';
+import { Dipendente} from '../../models/dipendente';
+
+
+
 @Component({
   selector: 'app-attivita',
   templateUrl: './attivita.component.html',
@@ -8,7 +12,7 @@ import { EmitterService, MessageCustom } from '../../services/emitter.service';
 })
 export class AttivitaComponent implements OnInit {
 
-
+@ViewChild('resultModal') resultModal: ElementRef;
     calendarOptions:Object = {
           //height: 'parent',
           fixedWeekCount : false,
@@ -94,7 +98,7 @@ export class AttivitaComponent implements OnInit {
 
     }
         };
-
+  private model= new Dipendente();
   constructor(private api: WebApiObservableService) { }
 
   ngOnInit() {
@@ -118,16 +122,24 @@ export class AttivitaComponent implements OnInit {
 
 parseWebService(res) {
    if(res.data==null){
-   EmitterService.get(EmitterService.MESSAGETOAST).emit(new MessageCustom('Automezzo non trovata!','Messagio di Confirmazione!','.green'));
+     EmitterService.get(EmitterService.MESSAGETOAST).emit(new MessageCustom('Dipedente non trovata!','Messagio di Confirmazione!','.green'));
      //this.onNuovo();
    }
-   else
-     //this.model=res.data;
-     //alert();
-  // this.searchElement.fillData = res.data;
-   /*this.dataModel = res.data.data;
-   this.paginacion.to = res.data.to;*/
-   console.log('');
+   else{
+     //Array.isArray(obj)
+      //if(res.count>0)
+      if(Array.isArray(res.data))
+          if(res.data.length==1)
+          //aqui metemos un popup con la lista de las coincidencias
+            //console.log('es un array');
+            //this.resultModal.nativeElement.show();
+            console.log(this.resultModal);
+            else
+              this.model=res.data[0];
+        else
+        this.model=res.data;
+   }
+
  }
 
 }

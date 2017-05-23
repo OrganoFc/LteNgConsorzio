@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import {CalendarComponent} from 'angular2-fullcalendar/src/calendar/calendar';
+import { AlertModule ,ModalModule} from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppheaderComponent } from './component/appheader/appheader.component';
@@ -16,6 +17,7 @@ import { ChilometraggioComponent } from './module/chilometraggio/chilometraggio.
 import { GasolioComponent } from './module/gasolio/gasolio.component';
 
 import { WebApiObservableService } from './services/web-api-observable.service';
+import { PreselezioneComponent } from './module/preselezione/preselezione.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,15 @@ import { WebApiObservableService } from './services/web-api-observable.service';
     AttivitaComponent,
     PresenzaComponent,
     ChilometraggioComponent,
-    GasolioComponent
+    GasolioComponent,
+    PreselezioneComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [
     WebApiObservableService

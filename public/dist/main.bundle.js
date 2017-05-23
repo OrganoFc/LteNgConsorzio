@@ -41,7 +41,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__(279),
         styles: [__webpack_require__(268)]
@@ -61,16 +61,18 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_fullcalendar_src_calendar_calendar__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__component_appheader_appheader_component__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__component_appfooter_appfooter_component__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__component_appmenu_appmenu_component__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__component_appsettings_appsettings_component__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__module_attivita_attivita_component__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__module_presenza_presenza_component__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__module_chilometraggio_chilometraggio_component__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__module_gasolio_gasolio_component__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_web_api_observable_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__component_appheader_appheader_component__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__component_appfooter_appfooter_component__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__component_appmenu_appmenu_component__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__component_appsettings_appsettings_component__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__module_attivita_attivita_component__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__module_presenza_presenza_component__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__module_chilometraggio_chilometraggio_component__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__module_gasolio_gasolio_component__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_web_api_observable_service__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__module_preselezione_preselezione_component__ = __webpack_require__(554);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -78,6 +80,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -101,26 +105,29 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__component_appheader_appheader_component__["a" /* AppheaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__component_appfooter_appfooter_component__["a" /* AppfooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__component_appmenu_appmenu_component__["a" /* AppmenuComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__component_appsettings_appsettings_component__["a" /* AppsettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__component_appheader_appheader_component__["a" /* AppheaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__component_appfooter_appfooter_component__["a" /* AppfooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__component_appmenu_appmenu_component__["a" /* AppmenuComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__component_appsettings_appsettings_component__["a" /* AppsettingsComponent */],
             __WEBPACK_IMPORTED_MODULE_4_angular2_fullcalendar_src_calendar_calendar__["a" /* CalendarComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__module_attivita_attivita_component__["a" /* AttivitaComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__module_presenza_presenza_component__["a" /* PresenzaComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__module_chilometraggio_chilometraggio_component__["a" /* ChilometraggioComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__module_gasolio_gasolio_component__["a" /* GasolioComponent */]
+            __WEBPACK_IMPORTED_MODULE_11__module_attivita_attivita_component__["a" /* AttivitaComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__module_presenza_presenza_component__["a" /* PresenzaComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__module_chilometraggio_chilometraggio_component__["a" /* ChilometraggioComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__module_gasolio_gasolio_component__["a" /* GasolioComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__module_preselezione_preselezione_component__["a" /* PreselezioneComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["a" /* AlertModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["b" /* ModalModule */].forRoot()
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_14__services_web_api_observable_service__["a" /* WebApiObservableService */]
+            __WEBPACK_IMPORTED_MODULE_15__services_web_api_observable_service__["a" /* WebApiObservableService */]
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]],
         schemas: [__WEBPACK_IMPORTED_MODULE_1__angular_core__["c" /* CUSTOM_ELEMENTS_SCHEMA */]]
     })
 ], AppModule);
@@ -153,7 +160,7 @@ var AppfooterComponent = (function () {
     return AppfooterComponent;
 }());
 AppfooterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-appfooter',
         template: __webpack_require__(280),
         styles: [__webpack_require__(269)]
@@ -189,7 +196,7 @@ var AppheaderComponent = (function () {
     return AppheaderComponent;
 }());
 AppheaderComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-appheader',
         template: __webpack_require__(281),
         styles: [__webpack_require__(270)]
@@ -225,7 +232,7 @@ var AppmenuComponent = (function () {
     return AppmenuComponent;
 }());
 AppmenuComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-appmenu',
         template: __webpack_require__(282),
         styles: [__webpack_require__(271)]
@@ -261,7 +268,7 @@ var AppsettingsComponent = (function () {
     return AppsettingsComponent;
 }());
 AppsettingsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-appsettings',
         template: __webpack_require__(283),
         styles: [__webpack_require__(272)]
@@ -280,6 +287,7 @@ AppsettingsComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_web_api_observable_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_dipendente__ = __webpack_require__(362);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AttivitaComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -290,6 +298,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -373,6 +382,7 @@ var AttivitaComponent = (function () {
                 $(this).css('background-color', 'red');
             }
         };
+        this.model = new __WEBPACK_IMPORTED_MODULE_3__models_dipendente__["a" /* Dipendente */]();
         this.url = __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["a" /* EmitterService */].urlapi + "/dipendente";
     }
     AttivitaComponent.prototype.ngOnInit = function () {
@@ -393,29 +403,40 @@ var AttivitaComponent = (function () {
     };
     AttivitaComponent.prototype.parseWebService = function (res) {
         if (res.data == null) {
-            __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["a" /* EmitterService */].get(__WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["a" /* EmitterService */].MESSAGETOAST).emit(new __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["b" /* MessageCustom */]('Automezzo non trovata!', 'Messagio di Confirmazione!', '.green'));
+            __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["a" /* EmitterService */].get(__WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["a" /* EmitterService */].MESSAGETOAST).emit(new __WEBPACK_IMPORTED_MODULE_2__services_emitter_service__["b" /* MessageCustom */]('Dipedente non trovata!', 'Messagio di Confirmazione!', '.green'));
             //this.onNuovo();
         }
-        else
-            //this.model=res.data;
-            //alert();
-            // this.searchElement.fillData = res.data;
-            /*this.dataModel = res.data.data;
-            this.paginacion.to = res.data.to;*/
-            console.log('');
+        else {
+            //Array.isArray(obj)
+            //if(res.count>0)
+            if (Array.isArray(res.data))
+                if (res.data.length == 1)
+                    //aqui metemos un popup con la lista de las coincidencias
+                    //console.log('es un array');
+                    //this.resultModal.nativeElement.show();
+                    console.log(this.resultModal);
+                else
+                    this.model = res.data[0];
+            else
+                this.model = res.data;
+        }
     };
     return AttivitaComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])('resultModal'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* ElementRef */]) === "function" && _a || Object)
+], AttivitaComponent.prototype, "resultModal", void 0);
 AttivitaComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-attivita',
         template: __webpack_require__(284),
         styles: [__webpack_require__(273)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_web_api_observable_service__["a" /* WebApiObservableService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_web_api_observable_service__["a" /* WebApiObservableService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_web_api_observable_service__["a" /* WebApiObservableService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_web_api_observable_service__["a" /* WebApiObservableService */]) === "function" && _b || Object])
 ], AttivitaComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=attivita.component.js.map
 
 /***/ }),
@@ -444,7 +465,7 @@ var ChilometraggioComponent = (function () {
     return ChilometraggioComponent;
 }());
 ChilometraggioComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-chilometraggio',
         template: __webpack_require__(285),
         styles: [__webpack_require__(274)]
@@ -480,7 +501,7 @@ var GasolioComponent = (function () {
     return GasolioComponent;
 }());
 GasolioComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-gasolio',
         template: __webpack_require__(286),
         styles: [__webpack_require__(275)]
@@ -516,7 +537,7 @@ var PresenzaComponent = (function () {
     return PresenzaComponent;
 }());
 PresenzaComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
         selector: 'app-presenza',
         template: __webpack_require__(287),
         styles: [__webpack_require__(276)]
@@ -1046,7 +1067,7 @@ module.exports = "<aside class=\"control-sidebar control-sidebar-dark\">\n    <!
 /***/ 284:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"col-md-3\">\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"input-group\">\n      <input type=\"text\" #search class=\"form-control\">\n          <div class=\"input-group-btn\">\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"getDipendente('i')\">Cercare</button>\n          </div>\n\n                    <!-- /btn-group -->\n\n    </div>\n\n    <div class=\"input-group\">\n      <label>RICARDO MIGUEL MARTINEZ LIZARME </label>\n\n                    <!-- /btn-group -->\n\n    </div>\n\n    <div class=\"form-group\">\n          <label>Select</label>\n          <select class=\"form-control\">\n            <option>option 1</option>\n            <option>option 2</option>\n            <option>option 3</option>\n            <option>option 4</option>\n            <option>option 5</option>\n          </select>\n    </div>\n  </div>\n</div>\n</div>\n<div class=\"col-md-9\">\n\n<div class=\"box box-primary\">\n  <div class=\"box-body no-padding\">\n    <!-- THE CALENDAR -->\n   <angular2-fullcalendar [options]=\"calendarOptions\"></angular2-fullcalendar>\n  </div>\n  <!-- /.box-body -->\n</div>\n</div>\n"
+module.exports = "<div class=\"col-md-3\">\n<div class=\"row\">\n  <div class=\"col-md-12\">\n    <div class=\"input-group\">\n      <input type=\"text\" #search class=\"form-control\">\n          <div class=\"input-group-btn\">\n            <button type=\"button\" class=\"btn btn-danger\" (click)=\"getDipendente(search.value);\">Cercare</button>\n          </div>\n                    <!-- /btn-group -->\n    </div>\n    <div class=\"input-group\">\n      <label>{{model.nome}} </label>\n                    <!-- /btn-group -->\n<alert type=\"success\">hello</alert>\n    </div>\n\n    <div class=\"form-group\">\n          <label>Targa</label>\n          <select class=\"form-control\">\n            <option>option 1</option>\n            <option>option 2</option>\n            <option>option 3</option>\n            <option>option 4</option>\n            <option>option 5</option>\n          </select>\n    </div>\n  </div>\n</div>\n</div>\n<div class=\"col-md-9\">\n\n<div class=\"box box-primary\">\n  <div class=\"box-body no-padding\">\n    <!-- THE CALENDAR -->\n   <angular2-fullcalendar [options]=\"calendarOptions\"></angular2-fullcalendar>\n  </div>\n  <!-- /.box-body -->\n</div>\n</div>\n\n\n<!-- modal static -->\n\n\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"staticModal.show()\">Static modal</button>\n\n\n\n\n<div class=\"modal fade\" bsModal #staticModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\"\n     tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-lg\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title pull-left\">Static modal</h4>\n        <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"staticModal.hide()\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n\n        <div class=\"box-body no-padding\">\n                <table class=\"table table-condensed\">\n                  <tbody><tr>\n                    <th style=\"width: 10px\">#</th>\n                    <th>Task</th>\n                    <th>Progress</th>\n                    <th style=\"width: 40px\">Label</th>\n                  </tr>\n                  <tr>\n                    <td>1.</td>\n                    <td>Update software</td>\n                    <td>\n                      <div class=\"progress progress-xs\">\n                        <div class=\"progress-bar progress-bar-danger\" style=\"width: 55%\"></div>\n                      </div>\n                    </td>\n                    <td><span class=\"badge bg-red\">55%</span></td>\n                  </tr>\n                  <tr>\n                    <td>2.</td>\n                    <td>Clean database</td>\n                    <td>\n                      <div class=\"progress progress-xs\">\n                        <div class=\"progress-bar progress-bar-yellow\" style=\"width: 70%\"></div>\n                      </div>\n                    </td>\n                    <td><span class=\"badge bg-yellow\">70%</span></td>\n                  </tr>\n                  <tr>\n                    <td>3.</td>\n                    <td>Cron job running</td>\n                    <td>\n                      <div class=\"progress progress-xs progress-striped active\">\n                        <div class=\"progress-bar progress-bar-primary\" style=\"width: 30%\"></div>\n                      </div>\n                    </td>\n                    <td><span class=\"badge bg-light-blue\">30%</span></td>\n                  </tr>\n                  <tr>\n                    <td>4.</td>\n                    <td>Fix and squish bugs</td>\n                    <td>\n                      <div class=\"progress progress-xs progress-striped active\">\n                        <div class=\"progress-bar progress-bar-success\" style=\"width: 90%\"></div>\n                      </div>\n                    </td>\n                    <td><span class=\"badge bg-green\">90%</span></td>\n                  </tr>\n                </tbody></table>\n              </div>\n\n\n\n\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n\n<div class=\"modal fade\" bsModal #resultModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\"\n     tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-lg\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h4 class=\"modal-title pull-left\">Static modal</h4>\n        <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"staticModal.hide()\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n\n        <app-preselezione></app-preselezione>\n\n\n\n\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1076,6 +1097,24 @@ module.exports = "<p>\n  presenza works!\n</p>\n"
 
 module.exports = __webpack_require__(194);
 
+
+/***/ }),
+
+/***/ 362:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dipendente; });
+var Dipendente = (function () {
+    function Dipendente() {
+        this.inforza = false;
+        this.noninforza = false;
+        this.azienda_id = 1;
+    }
+    return Dipendente;
+}());
+
+//# sourceMappingURL=dipendente.js.map
 
 /***/ }),
 
@@ -1245,6 +1284,67 @@ WebApiObservableService = __decorate([
 
 var _a;
 //# sourceMappingURL=web-api-observable.service.js.map
+
+/***/ }),
+
+/***/ 554:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PreselezioneComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PreselezioneComponent = (function () {
+    function PreselezioneComponent() {
+    }
+    PreselezioneComponent.prototype.ngOnInit = function () {
+    };
+    return PreselezioneComponent;
+}());
+PreselezioneComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
+        selector: 'app-preselezione',
+        template: __webpack_require__(556),
+        styles: [__webpack_require__(555)]
+    }),
+    __metadata("design:paramtypes", [])
+], PreselezioneComponent);
+
+//# sourceMappingURL=preselezione.component.js.map
+
+/***/ }),
+
+/***/ 555:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(11)(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"preselezione.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 556:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n  <div class=\"col-md-3 col-sm-6 col-xs-12\">\n          <div class=\"info-box\">\n            <span class=\"info-box-icon bg-aqua\"><i class=\"fa fa-gear\"></i></span>\n            <div class=\"info-box-content\">\n              <span class=\"info-box-text\">Presenza</span>\n              <span class=\"info-box-number\">10<small>%</small></span>\n            </div>\n            <!-- /.info-box-content -->\n          </div>\n          <!-- /.info-box -->\n  </div>\n  <div class=\"col-md-3 col-sm-6 col-xs-12\">\n            <div class=\"info-box\">\n              <span class=\"info-box-icon bg-yellow\"><i class=\"fa fa-group\"></i></span>\n\n              <div class=\"info-box-content\">\n                <span class=\"info-box-text\">Dipendenti</span>\n                <span class=\"info-box-number\">47</span>\n              </div>\n              <!-- /.info-box-content -->\n            </div>\n            <!-- /.info-box -->\n  </div>\n</div>\n"
 
 /***/ })
 
