@@ -6,11 +6,9 @@
           <div class="input-group-btn">
             <button type="button" class="btn btn-danger" (click)="getDipendente(search.value);">Cercare</button>
           </div>
-                    <!-- /btn-group -->
     </div>
     <div class="input-group">
       <label>{{model.nome}} </label>
-                    <!-- /btn-group -->
 <alert type="success">hello</alert>
     </div>
 
@@ -23,7 +21,50 @@
             <option>option 4</option>
             <option>option 5</option>
           </select>
+
+          <select2 [data]="exampleData"></select2>
     </div>
+
+    <div class="box-body">
+              <div class="form-group presenza">
+                <label>
+                  <input type="radio" name="presenza" class="minimal-red" checked>
+                    Presenza
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="presenza" class="minimal-red">
+                    Manutenzione
+                </label>
+              </div>
+
+              <div class="form-group dipendente">
+                <label>
+                  <input type="radio" name="dipendente" class="minimal-red" checked>
+                    Autiusta/Dipendente
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="dipendente" class="minimal-red">
+                    Ufficio/Dipendente
+                </label>
+              </div>
+
+              <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="minimal-red" >
+                      Chilometraggio
+                  </label>
+                  <br>
+                  <label>
+                    <input type="checkbox" class="minimal-red" >
+                      Spessa Gasolio
+                  </label>
+              </div>
+
+            </div>
+
+
   </div>
 </div>
 </div>
@@ -39,20 +80,18 @@
 </div>
 
 
-<!-- modal static -->
-
 
 <button type="button" class="btn btn-primary" (click)="staticModal.show()">Static modal</button>
 
 
 
-
-<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+<!-- Ventana Modal del formulario di presenza chilometraggio/Spessa gasolio -->
+<div class="modal fade" bsModal  #staticModal="bs-modal" [config]="{backdrop: 'static'}"
      tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title pull-left">Static modal</h4>
+        <h4 class="modal-title pull-left">Dati Attività</h4>
         <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -60,59 +99,93 @@
       <div class="modal-body">
 
         <div class="box-body no-padding">
-                <table class="table table-condensed">
-                  <tbody><tr>
-                    <th style="width: 10px">#</th>
-                    <th>Task</th>
-                    <th>Progress</th>
-                    <th style="width: 40px">Label</th>
-                  </tr>
-                  <tr>
-                    <td>1.</td>
-                    <td>Update software</td>
-                    <td>
-                      <div class="progress progress-xs">
-                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                      </div>
-                    </td>
-                    <td><span class="badge bg-red">55%</span></td>
-                  </tr>
-                  <tr>
-                    <td>2.</td>
-                    <td>Clean database</td>
-                    <td>
-                      <div class="progress progress-xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                      </div>
-                    </td>
-                    <td><span class="badge bg-yellow">70%</span></td>
-                  </tr>
-                  <tr>
-                    <td>3.</td>
-                    <td>Cron job running</td>
-                    <td>
-                      <div class="progress progress-xs progress-striped active">
-                        <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                      </div>
-                    </td>
-                    <td><span class="badge bg-light-blue">30%</span></td>
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td>Fix and squish bugs</td>
-                    <td>
-                      <div class="progress progress-xs progress-striped active">
-                        <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                      </div>
-                    </td>
-                    <td><span class="badge bg-green">90%</span></td>
-                  </tr>
-                </tbody></table>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="minimal-red" >
+                      Chilometraggio
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Km inizio</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Introdurre il Kilometro inizio</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Km inizio</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Introdurre il Kilometro fine</span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Km inizio</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Introdurre il totale kilometri</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="minimal-red" >
+                      Spessa Gasolio
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i> Importo €</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Introdurre il importo spesso</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group has-success">
+                  <label class="control-label" for="inputSuccess"><i class="fa fa-check"></i>Litri Lt</label>
+                  <input type="text" class="form-control" id="inputSuccess" placeholder="Enter ...">
+                  <span class="help-block">Introdurre i litri caricati sul mezzo</span>
+                </div>
               </div>
 
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="minimal-red" >
+                      Presenza
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                  <label>Nota</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
 
-
+      <div class="modal-footer">
+        <a class="btn btn-app btn-success">
+                <i class="fa fa-save"></i> Salva
+        </a>
       </div>
     </div>
   </div>
@@ -120,23 +193,20 @@
 
 
 
-
-<div class="modal fade" bsModal #resultModal="bs-modal" [config]="{backdrop: 'static'}"
+<!-- Ventana modal dei dipendente -->
+<div class="modal fade" bsModal id="resultModal" #resultModal="bs-modal" [config]="{backdrop: 'static'}"
      tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title pull-left">Static modal</h4>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="resultModal.hide()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 
         <app-preselezione></app-preselezione>
-
-
-
 
       </div>
     </div>

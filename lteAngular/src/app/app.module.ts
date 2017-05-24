@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import {CalendarComponent} from 'angular2-fullcalendar/src/calendar/calendar';
 import { AlertModule ,ModalModule} from 'ngx-bootstrap';
+import { Select2Module } from 'ng2-select2';
+import {HotTableModule} from 'ng2-handsontable';
 
 import { AppComponent } from './app.component';
 import { AppheaderComponent } from './component/appheader/appheader.component';
@@ -38,7 +40,9 @@ import { PreselezioneComponent } from './module/preselezione/preselezione.compon
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    Select2Module,
+    HotTableModule
   ],
   providers: [
     WebApiObservableService

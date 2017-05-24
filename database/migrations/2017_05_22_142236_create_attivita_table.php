@@ -20,8 +20,6 @@ class CreateAttivitaTable extends Migration
 
       Schema::table('attivita', function (Blueprint $table) {
           $table->string('nome',10);
-          $table->integer('calendario_id')->unsigned();
-          $table->foreign('calendario_id')->references('id')->on('calendario');
           $table->timestamps();
       });
     }
